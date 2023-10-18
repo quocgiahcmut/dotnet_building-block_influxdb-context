@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfluxDB.Provider", "src\InfluxDB.Provider\InfluxDB.Provider.csproj", "{25215160-7B86-4A42-91D8-0D6A7E7527D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfluxDB.Provider", "src\InfluxDB.Provider\InfluxDB.Provider.csproj", "{25215160-7B86-4A42-91D8-0D6A7E7527D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CAC703EA-D2A6-45C3-8E1C-591DF5B92AC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "src\ConsoleTest\ConsoleTest.csproj", "{28BBED17-89CA-4456-9C75-99768DF4EF9B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfluxDB.Test", "src\InfluxDB.Test\InfluxDB.Test.csproj", "{674FE3BE-CCE1-4ADA-90CD-83EAB7833C5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,21 @@ Global
 		{25215160-7B86-4A42-91D8-0D6A7E7527D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25215160-7B86-4A42-91D8-0D6A7E7527D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25215160-7B86-4A42-91D8-0D6A7E7527D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28BBED17-89CA-4456-9C75-99768DF4EF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28BBED17-89CA-4456-9C75-99768DF4EF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28BBED17-89CA-4456-9C75-99768DF4EF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28BBED17-89CA-4456-9C75-99768DF4EF9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{674FE3BE-CCE1-4ADA-90CD-83EAB7833C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674FE3BE-CCE1-4ADA-90CD-83EAB7833C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674FE3BE-CCE1-4ADA-90CD-83EAB7833C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674FE3BE-CCE1-4ADA-90CD-83EAB7833C5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{28BBED17-89CA-4456-9C75-99768DF4EF9B} = {CAC703EA-D2A6-45C3-8E1C-591DF5B92AC2}
+		{674FE3BE-CCE1-4ADA-90CD-83EAB7833C5D} = {CAC703EA-D2A6-45C3-8E1C-591DF5B92AC2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1667055B-ACA7-4181-B7E7-9FA86E6498E4}
