@@ -2,6 +2,7 @@
 using InfluxDB.Client;
 using InfluxDB.Client.Api.Domain;
 using InfluxDB.Client.Core.Flux.Domain;
+using InfluxDB.Client.Linq;
 using InfluxDB.Client.Writes;
 using InfluxDB.Provider;
 
@@ -23,6 +24,14 @@ query = @"from(bucket:""bucket-test"")
 List<FluxTable> TABLES = await context.QueryAsync(query);
 
 var sensor = await context.QueryAsync<Sensor>(query);
+using var client = new InfluxDBClient(host, token);
+
+var settings = new QueryableOptimizerSettings
+{
+
+};
+
+var queryable = InfluxDBQueryable<Sensor>.Queryable("iot_sensor", org, client.GetQueryApi(), settings);
 
 Console.ReadLine();
 
